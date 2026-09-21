@@ -40,8 +40,8 @@ At the moment I'm strengthening my fundamentals in data structures and algorithm
 ## GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=amrithsaravanan&show_icons=true&hide_border=true&theme=transparent&include_all_commits=true&title_color=38bdf8&text_color=9ca3af&icon_color=6b7280" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amrithsaravanan&layout=compact&hide_border=true&theme=transparent&langs_count=6&title_color=38bdf8&text_color=9ca3af" alt="Top languages" />
+  <img width="49%" src="profile-summary-card-output/github_dark/3-stats.svg" alt="GitHub stats" />
+  <img width="49%" src="profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most used languages" />
 </p>
 
 <p align="center">
