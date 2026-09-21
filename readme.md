@@ -58,7 +58,7 @@ At the moment I'm strengthening my fundamentals in data structures and algorithm
 
 <a href="https://github.com/amrithsaravanan"><img src="https://img.shields.io/badge/GitHub-0b0f17?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://amrith.drmcet.info/"><img src="https://img.shields.io/badge/Portfolio-0b0f17?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-<a href="YOUR_LINKEDIN_URL"><img src="https://img.shields.io/badge/LinkedIn-0b0f17?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
+<a href="https://linkedin.com/in/amrith-ss"><img src="https://img.shields.io/badge/LinkedIn-0b0f17?style=flat-square&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
 
 <br><br>
 
