@@ -1,0 +1,53 @@
+/* ==========================================================================
+   EXAM LAB — design tokens (single source of truth for all colours)
+   --------------------------------------------------------------------------
+   PROVISIONAL VALUES: the reference site's stylesheet could not be read
+   (only its text was retrievable), so these are neutral placeholders and are
+   NOT the reference palette. To match the reference, replace the values below
+   with its real colours. No component hardcodes a colour, so this file is the
+   only place that needs to change.
+   ========================================================================== */
+:root,
+:root[data-theme='light'] {
+  --bg: #fafaf9;            /* primary background   */
+  --bg-2: #f3f2f0;         /* secondary background */
+  --surface: #ffffff;       /* cards, panels        */
+  --text: #1a1a1a;          /* primary text         */
+  --text-2: #5c5a57;        /* secondary text       */
+  --accent: #2f4fd1;        /* accent               */
+  --accent-contrast: #ffffff;
+  --border: #e4e2de;
+  --active: #e9edfb;        /* active / selected    */
+  --hover: #f0eeea;
+  --success: #1f7a47;  --success-bg: #e5f3eb;
+  --warning: #9a6408;  --warning-bg: #fbf0d9;
+  --error: #b83227;    --error-bg: #fae8e5;
+  --overlay: rgba(10, 10, 10, 0.5);
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  --bg: #111111;
+  --bg-2: #181818;
+  --surface: #1c1c1c;
+  --text: #ededeb;
+  --text-2: #a3a09b;
+  --accent: #7d94f5;
+  --accent-contrast: #101010;
+  --border: #2e2e2c;
+  --active: #232a45;
+  --hover: #262625;
+  --success: #4cc283;  --success-bg: #14291e;
+  --warning: #e0a93d;  --warning-bg: #2d2411;
+  --error: #ef7a6e;    --error-bg: #301a17;
+  --overlay: rgba(0, 0, 0, 0.65);
+  color-scheme: dark;
+}
+
+/* Non-colour tokens */
+:root {
+  --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --fs-h1: 1.75rem; --fs-h2: 1.25rem; --fs-h3: 1rem; --fs-body: 0.9375rem; --fs-label: 0.8125rem; --fs-caption: 0.75rem; --fs-question: 1.125rem;
+  --radius: 6px; --radius-lg: 8px;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+}

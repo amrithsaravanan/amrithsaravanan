@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0",
+  "setId": "my-set-01",
+  "title": "My Question Bank",
+  "subject": "Subject name",
+  "description": "Optional description",
+  "durationMinutes": 30,
+  "totalMarks": 2,
+  "negativeMarking": 0,
+  "sections": [
+    "Section A"
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "section": "Section A",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "Question text goes here?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        },
+        {
+          "id": "C",
+          "text": "Option C"
+        },
+        {
+          "id": "D",
+          "text": "Option D"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Why B is correct.",
+      "tags": [
+        "optional-tag"
+      ]
+    },
+    {
+      "id": "Q002",
+      "section": "Section A",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "Second question?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Option A"
+        },
+        {
+          "id": "B",
+          "text": "Option B"
+        }
+      ],
+      "correctAnswer": "A",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Why A is correct."
+    }
+  ]
+}

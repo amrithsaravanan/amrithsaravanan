@@ -1,0 +1,452 @@
+{
+  "schemaVersion": "1.0",
+  "setId": "aptitude-set-01",
+  "title": "Aptitude Practice Set 01",
+  "subject": "Aptitude",
+  "description": "Sample placement-style aptitude set. Replace it with your own question bank.",
+  "durationMinutes": 20,
+  "totalMarks": 15,
+  "negativeMarking": 0.25,
+  "sections": [
+    "Quantitative Aptitude",
+    "Logical Reasoning",
+    "Verbal Ability"
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "section": "Quantitative Aptitude",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "What is 20% of 250?",
+      "options": [
+        {
+          "id": "A",
+          "text": "25"
+        },
+        {
+          "id": "B",
+          "text": "40"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "60"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "20/100 × 250 = 50."
+    },
+    {
+      "id": "Q002",
+      "section": "Quantitative Aptitude",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "A train travelling at 60 km/h covers 150 km in how many hours?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "2.5"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "3.5"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Time = distance ÷ speed = 150 ÷ 60 = 2.5 hours."
+    },
+    {
+      "id": "Q003",
+      "section": "Quantitative Aptitude",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "What is the simple interest on ₹5000 at 8% per annum for 3 years?",
+      "options": [
+        {
+          "id": "A",
+          "text": "₹1000"
+        },
+        {
+          "id": "B",
+          "text": "₹1200"
+        },
+        {
+          "id": "C",
+          "text": "₹1400"
+        },
+        {
+          "id": "D",
+          "text": "₹1600"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "SI = P×R×T/100 = 5000×8×3/100 = 1200."
+    },
+    {
+      "id": "Q004",
+      "section": "Quantitative Aptitude",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "What is the average of 12, 18, 24, 30 and 36?",
+      "options": [
+        {
+          "id": "A",
+          "text": "22"
+        },
+        {
+          "id": "B",
+          "text": "24"
+        },
+        {
+          "id": "C",
+          "text": "26"
+        },
+        {
+          "id": "D",
+          "text": "28"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Sum = 120; 120 ÷ 5 = 24."
+    },
+    {
+      "id": "Q005",
+      "section": "Quantitative Aptitude",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "If x + 7 = 19, what is the value of 3x?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "33"
+        },
+        {
+          "id": "C",
+          "text": "36"
+        },
+        {
+          "id": "D",
+          "text": "42"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "x = 12, so 3x = 36."
+    },
+    {
+      "id": "Q006",
+      "section": "Logical Reasoning",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "Find the next number: 2, 6, 12, 20, 30, ?",
+      "options": [
+        {
+          "id": "A",
+          "text": "40"
+        },
+        {
+          "id": "B",
+          "text": "42"
+        },
+        {
+          "id": "C",
+          "text": "44"
+        },
+        {
+          "id": "D",
+          "text": "48"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Differences are 4, 6, 8, 10, so the next difference is 12: 30 + 12 = 42."
+    },
+    {
+      "id": "Q007",
+      "section": "Logical Reasoning",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "If CAT is coded as DBU, how is DOG coded?",
+      "options": [
+        {
+          "id": "A",
+          "text": "EPH"
+        },
+        {
+          "id": "B",
+          "text": "DPH"
+        },
+        {
+          "id": "C",
+          "text": "EOH"
+        },
+        {
+          "id": "D",
+          "text": "FPH"
+        }
+      ],
+      "correctAnswer": "A",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Each letter moves one place forward: D→E, O→P, G→H."
+    },
+    {
+      "id": "Q008",
+      "section": "Logical Reasoning",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "A is B's sister. B is C's father. How is A related to C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mother"
+        },
+        {
+          "id": "B",
+          "text": "Aunt"
+        },
+        {
+          "id": "C",
+          "text": "Cousin"
+        },
+        {
+          "id": "D",
+          "text": "Grandmother"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "A is the sister of C's father, so she is C's aunt."
+    },
+    {
+      "id": "Q009",
+      "section": "Logical Reasoning",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Find the odd one out: 27, 64, 100, 125",
+      "options": [
+        {
+          "id": "A",
+          "text": "27"
+        },
+        {
+          "id": "B",
+          "text": "64"
+        },
+        {
+          "id": "C",
+          "text": "100"
+        },
+        {
+          "id": "D",
+          "text": "125"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "27, 64 and 125 are perfect cubes; 100 is not."
+    },
+    {
+      "id": "Q010",
+      "section": "Logical Reasoning",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "Facing north, you turn right 90° and then right 90° again. Which direction do you now face?",
+      "options": [
+        {
+          "id": "A",
+          "text": "North"
+        },
+        {
+          "id": "B",
+          "text": "East"
+        },
+        {
+          "id": "C",
+          "text": "South"
+        },
+        {
+          "id": "D",
+          "text": "West"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "North → East → South."
+    },
+    {
+      "id": "Q011",
+      "section": "Verbal Ability",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "Choose the synonym of 'Abundant'.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Scarce"
+        },
+        {
+          "id": "B",
+          "text": "Plentiful"
+        },
+        {
+          "id": "C",
+          "text": "Rare"
+        },
+        {
+          "id": "D",
+          "text": "Tiny"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Abundant means existing in large quantities, i.e. plentiful."
+    },
+    {
+      "id": "Q012",
+      "section": "Verbal Ability",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "Choose the antonym of 'Transparent'.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Clear"
+        },
+        {
+          "id": "B",
+          "text": "Opaque"
+        },
+        {
+          "id": "C",
+          "text": "Thin"
+        },
+        {
+          "id": "D",
+          "text": "Bright"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "Transparent means see-through; opaque is its opposite."
+    },
+    {
+      "id": "Q013",
+      "section": "Verbal Ability",
+      "type": "single_choice",
+      "difficulty": "easy",
+      "question": "Fill in the blank: She ___ to the office every day.",
+      "options": [
+        {
+          "id": "A",
+          "text": "go"
+        },
+        {
+          "id": "B",
+          "text": "goes"
+        },
+        {
+          "id": "C",
+          "text": "going"
+        },
+        {
+          "id": "D",
+          "text": "gone"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "A singular third-person subject takes 'goes' in the simple present."
+    },
+    {
+      "id": "Q014",
+      "section": "Verbal Ability",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "Choose the correct spelling.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Accomodate"
+        },
+        {
+          "id": "B",
+          "text": "Accommodate"
+        },
+        {
+          "id": "C",
+          "text": "Acommodate"
+        },
+        {
+          "id": "D",
+          "text": "Acomodate"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "'Accommodate' has a double c and a double m."
+    },
+    {
+      "id": "Q015",
+      "section": "Verbal Ability",
+      "type": "single_choice",
+      "difficulty": "medium",
+      "question": "What does the idiom 'once in a blue moon' mean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Frequently"
+        },
+        {
+          "id": "B",
+          "text": "Rarely"
+        },
+        {
+          "id": "C",
+          "text": "Never"
+        },
+        {
+          "id": "D",
+          "text": "At night"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0.25,
+      "explanation": "It describes something that happens very rarely."
+    }
+  ]
+}

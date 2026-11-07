@@ -1,0 +1,1378 @@
+{
+  "schemaVersion": "1.0",
+  "setId": "amrith-day1-c-pointers-40",
+  "title": "Day 1 – C Programming: Pointers & Dynamic Memory",
+  "subject": "C Programming",
+  "description": "40 tough placement-level single-choice questions covering pointer fundamentals, declarations, address and dereference operators, arrays and pointers, pointer arithmetic, and dynamic memory allocation.",
+  "durationMinutes": 50,
+  "totalMarks": 40,
+  "negativeMarking": 0,
+  "sections": [
+    "Pointer Fundamentals, Declarations & Operators",
+    "Arrays, Pointers & Pointer Arithmetic",
+    "Dynamic Memory Allocation",
+    "Integrated Pointer Concepts"
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does `*p` mean when `p` is an `int *` pointing to a valid int?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The address stored in p"
+        },
+        {
+          "id": "B",
+          "text": "The int object pointed to by p"
+        },
+        {
+          "id": "C",
+          "text": "The size of p"
+        },
+        {
+          "id": "D",
+          "text": "A new pointer"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Unary * dereferences p and designates the pointed-to int.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer basics"
+      ]
+    },
+    {
+      "id": "Q002",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Which declares p as a pointer to an array of 5 ints?",
+      "options": [
+        {
+          "id": "A",
+          "text": "int *p[5];"
+        },
+        {
+          "id": "B",
+          "text": "int (*p)[5];"
+        },
+        {
+          "id": "C",
+          "text": "int **p[5];"
+        },
+        {
+          "id": "D",
+          "text": "int (*p[5]);"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Parentheses make p a pointer; [5] describes the pointed-to array.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Declarations"
+      ]
+    },
+    {
+      "id": "Q003",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int x=12; int *p=&x;`, which expression has type `int **`?",
+      "options": [
+        {
+          "id": "A",
+          "text": "p"
+        },
+        {
+          "id": "B",
+          "text": "*p"
+        },
+        {
+          "id": "C",
+          "text": "&p"
+        },
+        {
+          "id": "D",
+          "text": "&x"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p is int*, so &p is int**.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Address operator"
+      ]
+    },
+    {
+      "id": "Q004",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int x=7; int *p=&x; *p=*p+5;`, what is x?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "Undefined"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Dereferencing p accesses x, updating it to 12.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dereferencing"
+      ]
+    },
+    {
+      "id": "Q005",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "p points to a[2] in `int a[6]`. What does p+3 point to?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a[3]"
+        },
+        {
+          "id": "B",
+          "text": "a[4]"
+        },
+        {
+          "id": "C",
+          "text": "a[5]"
+        },
+        {
+          "id": "D",
+          "text": "One byte after a[2]"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Pointer arithmetic advances in elements of the pointed-to type.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q006",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "In most expressions, what does array `int a[10]` convert to?",
+      "options": [
+        {
+          "id": "A",
+          "text": "int *"
+        },
+        {
+          "id": "B",
+          "text": "int **"
+        },
+        {
+          "id": "C",
+          "text": "int [10]"
+        },
+        {
+          "id": "D",
+          "text": "int (*)[10]"
+        }
+      ],
+      "correctAnswer": "A",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "An array expression usually converts to a pointer to its first element.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Arrays and pointers"
+      ]
+    },
+    {
+      "id": "Q007",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int a[8]; int *p=a;`, which is equivalent to a[5]?",
+      "options": [
+        {
+          "id": "A",
+          "text": "*(p+5)"
+        },
+        {
+          "id": "B",
+          "text": "*p+5"
+        },
+        {
+          "id": "C",
+          "text": "&p[5]"
+        },
+        {
+          "id": "D",
+          "text": "*(p)+5"
+        }
+      ],
+      "correctAnswer": "A",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Subscript notation is defined as *(pointer + index).",
+      "tags": [
+        "C",
+        "Pointers",
+        "Arrays and pointers"
+      ]
+    },
+    {
+      "id": "Q008",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int a[]={10,20,30,40,50}; int *p=&a[1];`, what is *(p+2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "30"
+        },
+        {
+          "id": "C",
+          "text": "40"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p+2 points to a[3], which contains 40.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q009",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Which operation is defined for two pointers into the same array (or one past it)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adding pointers"
+        },
+        {
+          "id": "B",
+          "text": "Multiplying pointers"
+        },
+        {
+          "id": "C",
+          "text": "Subtracting pointers"
+        },
+        {
+          "id": "D",
+          "text": "Bitwise AND"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Pointer subtraction gives the distance in array elements.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q010",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "If p=&a[1] and q=&a[5] for one int array, what is q-p?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "16"
+        },
+        {
+          "id": "C",
+          "text": "4*sizeof(int)"
+        },
+        {
+          "id": "D",
+          "text": "Undefined"
+        }
+      ],
+      "correctAnswer": "A",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Pointer subtraction returns an element count, not bytes.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q011",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int a[4]={2,4,6,8};`, what is sizeof(a)/sizeof(a[0])?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "sizeof(int)"
+        },
+        {
+          "id": "D",
+          "text": "Address of a"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The array size divided by one element size gives four.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Arrays and pointers"
+      ]
+    },
+    {
+      "id": "Q012",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Inside `void f(int a[])`, what does sizeof(a) measure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Original array size"
+        },
+        {
+          "id": "B",
+          "text": "Number of original elements"
+        },
+        {
+          "id": "C",
+          "text": "Size of int pointer"
+        },
+        {
+          "id": "D",
+          "text": "Size of one int"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Array parameters are adjusted to pointer parameters.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Arrays and pointers"
+      ]
+    },
+    {
+      "id": "Q013",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does `const int *p` mean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "p cannot be reassigned"
+        },
+        {
+          "id": "B",
+          "text": "The int cannot be modified through p"
+        },
+        {
+          "id": "C",
+          "text": "Both p and int are constant"
+        },
+        {
+          "id": "D",
+          "text": "p is a constant int"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The pointed-to int is const through this access path; p itself may change.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Const pointers"
+      ]
+    },
+    {
+      "id": "Q014",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does `int * const p=&x` mean?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The int is read-only through p"
+        },
+        {
+          "id": "B",
+          "text": "p cannot be reassigned"
+        },
+        {
+          "id": "C",
+          "text": "Both are read-only everywhere"
+        },
+        {
+          "id": "D",
+          "text": "Pointer to const pointer"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The pointer itself is const; the pointed-to int can still be modified.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Const pointers"
+      ]
+    },
+    {
+      "id": "Q015",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Which declares a pointer to a function taking two ints and returning int?",
+      "options": [
+        {
+          "id": "A",
+          "text": "int *fp(int,int);"
+        },
+        {
+          "id": "B",
+          "text": "int (*fp)(int,int);"
+        },
+        {
+          "id": "C",
+          "text": "int (*fp(int,int));"
+        },
+        {
+          "id": "D",
+          "text": "int **fp(int,int);"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Parentheses make fp a pointer to a function.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Function pointers"
+      ]
+    },
+    {
+      "id": "Q016",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What is true of an uninitialized automatic pointer `int *p;`?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is NULL"
+        },
+        {
+          "id": "B",
+          "text": "It points to a local variable"
+        },
+        {
+          "id": "C",
+          "text": "Its value is indeterminate"
+        },
+        {
+          "id": "D",
+          "text": "It is address zero"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Never assume an uninitialized automatic pointer is valid or NULL.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Uninitialized pointers"
+      ]
+    },
+    {
+      "id": "Q017",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Which header declares malloc, calloc, realloc and free?",
+      "options": [
+        {
+          "id": "A",
+          "text": "stdio.h"
+        },
+        {
+          "id": "B",
+          "text": "string.h"
+        },
+        {
+          "id": "C",
+          "text": "stdlib.h"
+        },
+        {
+          "id": "D",
+          "text": "stddef.h"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The standard allocation functions are declared in stdlib.h.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q018",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Portable allocation for n ints, where n is size_t?",
+      "options": [
+        {
+          "id": "A",
+          "text": "malloc(n)"
+        },
+        {
+          "id": "B",
+          "text": "malloc(n*sizeof *p)"
+        },
+        {
+          "id": "C",
+          "text": "malloc(sizeof(int *))"
+        },
+        {
+          "id": "D",
+          "text": "malloc(n+sizeof(int))"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Allocate n elements using n * sizeof *p.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q019",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What should be done after malloc?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assume success"
+        },
+        {
+          "id": "B",
+          "text": "Check for NULL"
+        },
+        {
+          "id": "C",
+          "text": "Free before use"
+        },
+        {
+          "id": "D",
+          "text": "Cast unconditionally"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "malloc returns NULL if allocation fails.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q020",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Main difference between malloc and calloc?",
+      "options": [
+        {
+          "id": "A",
+          "text": "malloc uses stack"
+        },
+        {
+          "id": "B",
+          "text": "calloc zero-initializes allocated bytes"
+        },
+        {
+          "id": "C",
+          "text": "malloc always allocates more"
+        },
+        {
+          "id": "D",
+          "text": "calloc returns int*"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "malloc leaves storage uninitialized; calloc initializes allocated bytes to zero.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q021",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does free(p) do when p points to an allocated block?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sets p to NULL"
+        },
+        {
+          "id": "B",
+          "text": "Releases block but leaves p unchanged"
+        },
+        {
+          "id": "C",
+          "text": "Frees all allocations"
+        },
+        {
+          "id": "D",
+          "text": "Zeroes block"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The pointer variable is unchanged and becomes dangling after free.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q022",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Calling free(p) twice without a new allocation is what?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Harmless"
+        },
+        {
+          "id": "B",
+          "text": "Double-free with undefined behavior"
+        },
+        {
+          "id": "C",
+          "text": "Initializes memory"
+        },
+        {
+          "id": "D",
+          "text": "Doubles memory"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "A given allocation must not be freed twice.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q023",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Safest pattern for realloc(p,n) with nonzero n?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Overwrite p without checking"
+        },
+        {
+          "id": "B",
+          "text": "Use temporary pointer and check it"
+        },
+        {
+          "id": "C",
+          "text": "Always free p first"
+        },
+        {
+          "id": "D",
+          "text": "Assume same address"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "If realloc fails, the original allocation remains valid; a temporary avoids losing it.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q024",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does calloc(5,sizeof *p) request?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Five bytes"
+        },
+        {
+          "id": "B",
+          "text": "Space for five ints, zero-initialized"
+        },
+        {
+          "id": "C",
+          "text": "Five int pointers"
+        },
+        {
+          "id": "D",
+          "text": "One int equal to five"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "calloc takes element count and element size.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q025",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int a[4]; int *p=a;`, which forms one-past-the-end?",
+      "options": [
+        {
+          "id": "A",
+          "text": "p+3"
+        },
+        {
+          "id": "B",
+          "text": "p+4"
+        },
+        {
+          "id": "C",
+          "text": "p+5"
+        },
+        {
+          "id": "D",
+          "text": "*(p+4)"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p+4 may be formed but must not be dereferenced.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q026",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "A one-past pointer may be:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dereferenced"
+        },
+        {
+          "id": "B",
+          "text": "Formed and compared, but not dereferenced"
+        },
+        {
+          "id": "C",
+          "text": "Used as last element"
+        },
+        {
+          "id": "D",
+          "text": "Assumed NULL"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "C permits forming one-past pointers for traversal, not accessing an object.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q027",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int a[3][4];`, what is the type of a+1 after conversion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "int *"
+        },
+        {
+          "id": "B",
+          "text": "int **"
+        },
+        {
+          "id": "C",
+          "text": "int (*)[4]"
+        },
+        {
+          "id": "D",
+          "text": "int (*)[3]"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "a converts to a pointer to a row of four ints.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Multidimensional arrays"
+      ]
+    },
+    {
+      "id": "Q028",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int a[3][4];`, what does *(*(a+1)+2) designate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a[0][2]"
+        },
+        {
+          "id": "B",
+          "text": "a[1][2]"
+        },
+        {
+          "id": "C",
+          "text": "a[2][1]"
+        },
+        {
+          "id": "D",
+          "text": "a[2][2]"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "a+1 selects row 1; +2 selects column 2.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Multidimensional arrays"
+      ]
+    },
+    {
+      "id": "Q029",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int x=3; int *p=&x; int **q=&p;`, which accesses x through q?",
+      "options": [
+        {
+          "id": "A",
+          "text": "*q"
+        },
+        {
+          "id": "B",
+          "text": "**q"
+        },
+        {
+          "id": "C",
+          "text": "&*q"
+        },
+        {
+          "id": "D",
+          "text": "***q"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "q points to p; *q is p and **q is x.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer-to-pointer"
+      ]
+    },
+    {
+      "id": "Q030",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does `*p++` do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increments pointed value then advances p"
+        },
+        {
+          "id": "B",
+          "text": "Dereferences old p then increments p"
+        },
+        {
+          "id": "C",
+          "text": "Increments p twice"
+        },
+        {
+          "id": "D",
+          "text": "Same as (*p)++"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Postfix ++ binds more tightly: this is *(p++).",
+      "tags": [
+        "C",
+        "Pointers",
+        "Operator precedence"
+      ]
+    },
+    {
+      "id": "Q031",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What does `(*p)++` do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Advances p"
+        },
+        {
+          "id": "B",
+          "text": "Increments pointed-to int"
+        },
+        {
+          "id": "C",
+          "text": "Increments address by one byte"
+        },
+        {
+          "id": "D",
+          "text": "Sets p to NULL"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Parentheses dereference first; postfix ++ increments the pointed-to int.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Operator precedence"
+      ]
+    },
+    {
+      "id": "Q032",
+      "section": "Integrated Pointer Concepts",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int a[]={4,8,12,16,20}; int *p=a;`, what is p[3]?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "12"
+        },
+        {
+          "id": "C",
+          "text": "16"
+        },
+        {
+          "id": "D",
+          "text": "20"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p[3] is *(p+3), equal to a[3].",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer subscripting"
+      ]
+    },
+    {
+      "id": "Q033",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Which is true of malloc storage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Always zeroed"
+        },
+        {
+          "id": "B",
+          "text": "Suitably aligned for fundamental types"
+        },
+        {
+          "id": "C",
+          "text": "Only stores char arrays"
+        },
+        {
+          "id": "D",
+          "text": "Automatically freed on return"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "malloc provides suitably aligned storage; contents are uninitialized.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Dynamic allocation"
+      ]
+    },
+    {
+      "id": "Q034",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "What is a memory leak?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Read before initialization"
+        },
+        {
+          "id": "B",
+          "text": "Losing access to allocated storage without freeing it"
+        },
+        {
+          "id": "C",
+          "text": "Freeing after allocation"
+        },
+        {
+          "id": "D",
+          "text": "Using sizeof on pointer"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Allocated storage remains reserved after the program loses the means to release it.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Memory management"
+      ]
+    },
+    {
+      "id": "Q035",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "For `int *p=malloc(4*sizeof *p);`, what is wrong with p[4]=9?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nothing"
+        },
+        {
+          "id": "B",
+          "text": "Out of bounds; valid indices 0–3"
+        },
+        {
+          "id": "C",
+          "text": "Only four bytes allocated"
+        },
+        {
+          "id": "D",
+          "text": "p must be int**"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The allocation holds four ints, indexed 0 through 3.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Bounds"
+      ]
+    },
+    {
+      "id": "Q036",
+      "section": "Pointer Fundamentals, Declarations & Operators",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Given `int x=10; const int *p=&x;`, which is valid?",
+      "options": [
+        {
+          "id": "A",
+          "text": "*p=11;"
+        },
+        {
+          "id": "B",
+          "text": "p=NULL;"
+        },
+        {
+          "id": "C",
+          "text": "p=&p;"
+        },
+        {
+          "id": "D",
+          "text": "None"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p may be reassigned; the int cannot be modified through p.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Const pointers"
+      ]
+    },
+    {
+      "id": "Q037",
+      "section": "Arrays, Pointers & Pointer Arithmetic",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "If p=&a[1] for int a[5], which is guaranteed to point to an element?",
+      "options": [
+        {
+          "id": "A",
+          "text": "p-2"
+        },
+        {
+          "id": "B",
+          "text": "p+4"
+        },
+        {
+          "id": "C",
+          "text": "p-1"
+        },
+        {
+          "id": "D",
+          "text": "p+3"
+        }
+      ],
+      "correctAnswer": "D",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "p+3 points to a[4]; p+4 is one past, and negative choices go before the array.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Pointer arithmetic"
+      ]
+    },
+    {
+      "id": "Q038",
+      "section": "Integrated Pointer Concepts",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "Why is casting `int a[5]` to `int **` not a valid general way to point to its first element?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Array cannot appear in expressions"
+        },
+        {
+          "id": "B",
+          "text": "First element is int; its address is int*, not int**"
+        },
+        {
+          "id": "C",
+          "text": "int** only points to heap"
+        },
+        {
+          "id": "D",
+          "text": "Pointers cannot initialize from arrays"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "Array-to-pointer conversion gives int*. Casting does not turn an int object into an int* object.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Array vs pointer"
+      ]
+    },
+    {
+      "id": "Q039",
+      "section": "Dynamic Memory Allocation",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "How should portable code treat malloc(0)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Always dereference result"
+        },
+        {
+          "id": "B",
+          "text": "Assume it returns NULL"
+        },
+        {
+          "id": "C",
+          "text": "Handle result explicitly; do not access an object through it"
+        },
+        {
+          "id": "D",
+          "text": "Assume it allocates one int"
+        }
+      ],
+      "correctAnswer": "C",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "For a zero-size request, implementation behavior may yield NULL or a non-NULL pointer that cannot be used to access an object.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Zero-size allocation"
+      ]
+    },
+    {
+      "id": "Q040",
+      "section": "Integrated Pointer Concepts",
+      "type": "single_choice",
+      "difficulty": "hard",
+      "question": "After allocating 3 ints and assigning p[0]=5, p[1]=7, p[2]=9, which is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "p[2] is outside block"
+        },
+        {
+          "id": "B",
+          "text": "Block holds 3 ints and p[1] is 7"
+        },
+        {
+          "id": "C",
+          "text": "malloc zeroed them before assignments"
+        },
+        {
+          "id": "D",
+          "text": "p is an int[3] array object"
+        }
+      ],
+      "correctAnswer": "B",
+      "marks": 1,
+      "negativeMarks": 0,
+      "explanation": "The block has room for three ints; p is a pointer, not an array object.",
+      "tags": [
+        "C",
+        "Pointers",
+        "Integrated memory"
+      ]
+    }
+  ]
+}
